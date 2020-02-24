@@ -35,7 +35,7 @@ class App extends React.Component {
     clients.push(client);
 
     this.setState({ clients });
-  }
+  };
 
   // handleClick() {
   //  const clients = this.state.clients.slice();
@@ -57,7 +57,7 @@ class App extends React.Component {
             <Client details={client} onDelete={this.handleDelete} />
           ))}
         </ul>
-        <ClientForm onClientAdd={this.handleAdd}/>
+        <ClientForm onClientAdd={this.handleAdd} />
       </div>
     );
   }
